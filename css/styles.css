@@ -1,0 +1,260 @@
+.list {
+  /* убирает точки для списков */
+  list-style: none;
+}
+
+.link {
+  /* убирает подчеркивание ссылок */
+  text-decoration: none;
+}
+
+.header-none {
+  /* скрывает заголовки */
+  display: none;
+}
+
+body {
+  /* общий стиль
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2e2f42; */
+}
+
+/* ==========HEADER========== */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+/* .nav {
+} */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+
+/* .menu {
+} */
+
+/* .menu-item {
+} */
+
+.menu-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.menu-link:active {
+  color: #404bbf;
+  text-decoration-line: underline;
+}
+
+.adress {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.adress-email {
+  color: #434455;
+}
+
+.adress-email:active {
+  color: #404bbf;
+}
+
+.adress-phone {
+  color: #434455;
+}
+/* ==========HEADER=END========== */
+
+/* ==========MAIN========== */
+
+.section-hero {
+  background-color: #2e2f42;
+}
+
+.main-title {
+  /* заголовок h1 */
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.hero-modal-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  /* после этого описываем текст внутри кнопки */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.hero-modal-btn:hover {
+  background: #404bbf;
+}
+
+/* .section-feature {
+} */
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1, 2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.text-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* .section-what-are-we-doing {
+} */
+
+.suptitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.section-our-team {
+  background-color: #f4f4fd;
+}
+
+.card-suptitle-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.card-job-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.filter-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  /* после этого описываем текст внутри кнопки */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  /* курсор ладонь детается так: */
+  cursor: pointer;
+}
+
+.filter-btn:active {
+  align-items: flex-start;
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* после этого описываем текст внутри кнопки */
+  color: #ffffff;
+}
+
+/* .examples {
+} */
+
+/* ==========MAIN=END========== */
+
+/* ==========FOOTER========== */
+
+.footer {
+  background: #2e2f42;
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
+
+/* ==========FOOTER=END========== */
