@@ -1,3 +1,8 @@
+:root {
+  --accent-color: #404bbf;
+  --primary-background-color: #2e2f42;
+}
+
 .list {
   /* убирает точки для списков */
   list-style: none;
@@ -14,12 +19,12 @@
 }
 
 body {
-  /* общий стиль
-  font-weight: 500;
+  /* общий стиль */
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42; */
+  color: #2e2f42;
 }
 
 /* ==========HEADER========== */
@@ -40,7 +45,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: inherit;
 }
 
 /* .menu {
@@ -50,55 +55,55 @@ body {
 } */
 
 .menu-link {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: inherit;
 }
 
-.menu-link:active {
-  color: #404bbf;
+.menu-link:active,
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
   text-decoration-line: underline;
 }
 
 .adress {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .adress-email {
   color: #434455;
 }
 
-.adress-email:active {
-  color: #404bbf;
+.adress-email:active,
+.adress-email:hover,
+.adress-email:focus {
+  color: var(--accent-color);
 }
 
 .adress-phone {
   color: #434455;
+}
+
+.adress-phone:active,
+.adress-phone:hover,
+.adress-phone:focus {
+  color: var(--accent-color);
 }
 /* ==========HEADER=END========== */
 
 /* ==========MAIN========== */
 
 .section-hero {
-  background-color: #2e2f42;
+  background-color: var(--primary-background-color);
 }
 
 .main-title {
   /* заголовок h1 */
   font-family: 'Roboto';
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
@@ -114,16 +119,17 @@ body {
   /* после этого описываем текст внутри кнопки */
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+  cursor: pointer;
 }
 
-.hero-modal-btn:hover {
-  background: #404bbf;
+.hero-modal-btn:active,
+.hero-modal-btn:hover,
+.hero-modal-btn:focus {
+  background: var(--accent-color);
 }
 
 /* .section-feature {
@@ -133,17 +139,11 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1, 2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  line-height: 1.2;
 }
 
 .text-description {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -152,13 +152,10 @@ body {
 
 .suptitle {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1, 11;
+  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
 }
 
 .section-our-team {
@@ -171,17 +168,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
 }
 
 .card-job-title {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -204,20 +195,19 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  /* курсор ладонь детается так: */
   cursor: pointer;
 }
 
-.filter-btn:active {
+.filter-btn:active,
+.filter-btn:hover,
+.filter-btn:focus {
   align-items: flex-start;
-  background: #404bbf;
+  background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   /* после этого описываем текст внутри кнопки */
@@ -232,7 +222,7 @@ body {
 /* ==========FOOTER========== */
 
 .footer {
-  background: #2e2f42;
+  background: var(--primary-background-color);
 }
 
 .footer-logo {
@@ -250,10 +240,6 @@ body {
 
 .footer-text {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #e7e9fc;
 }
 
