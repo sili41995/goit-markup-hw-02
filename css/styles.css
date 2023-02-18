@@ -1,6 +1,21 @@
 :root {
-  --accent-color: #404bbf;
+  --primary-accent-color: #404bbf;
+  --secondary-accent-color: #ffffff;
   --primary-background-color: #2e2f42;
+  --secondary-background-color: #f4f4fd;
+  --other-background-color: #ffffff;
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --other-text-color: #e7e9fc;
+  --hero-text-color: #ffffff;
+  --border-color: #e7e9fc;
+  --button-color: #4d5ae5;
+  --button-color-text: #4d5ae5;
+  --other-button-color-text: #ffffff;
+  --footer-primary-logo-color: #f4f4fd;
+  --footer-secondary-logo-color: #4d5ae5;
+  --header-primary-logo-color: #2e2f42;
+  --header-secondary-logo-color: #4d5ae5;
 }
 
 .list {
@@ -10,6 +25,11 @@
 
 .link {
   /* убирает подчеркивание ссылок */
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
   text-decoration: none;
 }
 
@@ -24,71 +44,62 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 /* ==========HEADER========== */
 .header {
-  background: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
+  background: var(--other-background-color);
+  border-bottom: 1px solid;
+  border-bottom: var(--border-color);
 }
-
-/* .nav {
-} */
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: inherit;
+  color: var(--header-primary-logo-color);
 }
 
-/* .menu {
-} */
-
-/* .menu-item {
-} */
+.logo > span {
+  color: var(--header-secondary-logo-color);
+}
 
 .menu-link {
   font-weight: 500;
   color: inherit;
 }
 
-.menu-link:active,
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--accent-color);
-  text-decoration-line: underline;
+  color: var(--primary-accent-color);
 }
 
 .adress {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
 
 .adress-email {
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .adress-email:active,
 .adress-email:hover,
 .adress-email:focus {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 
 .adress-phone {
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .adress-phone:active,
 .adress-phone:hover,
 .adress-phone:focus {
-  color: var(--accent-color);
+  color: var(--primary-accent-color);
 }
 /* ==========HEADER=END========== */
 
@@ -100,58 +111,42 @@ body {
 
 .main-title {
   /* заголовок h1 */
-  font-family: 'Roboto';
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  color: #ffffff;
+  color: var(--hero-text-color);
 }
 
 .hero-modal-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 16px 32px;
-  gap: 10px;
-  background: #4d5ae5;
+  background: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   /* после этого описываем текст внутри кнопки */
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 500;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--other-button-color-text);
   cursor: pointer;
 }
 
-.hero-modal-btn:active,
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  background: var(--accent-color);
+  background: var(--primary-accent-color);
 }
 
-/* .section-feature {
-} */
-
 .subtitle {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  color: var(--primary-text-color);
 }
 
 .text-description {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
-/* .section-what-are-we-doing {
-} */
-
 .suptitle {
-  font-family: 'Roboto', sans-serif;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -159,11 +154,10 @@ body {
 }
 
 .section-our-team {
-  background-color: #f4f4fd;
+  background-color: var(--secondary-background-color);
 }
 
 .card-suptitle-name {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -171,51 +165,36 @@ body {
 }
 
 .card-job-title {
-  font-family: 'Roboto', sans-serif;
   text-align: center;
-  color: #434455;
-}
-
-.filters {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  color: var(--secondary-text-color);
 }
 
 .filter-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 12px 24px;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  background-color: var(--secondary-background-color);
+  border: 1px solid;
+  border-color: var(--border-color);
   border-radius: 4px;
   /* после этого описываем текст внутри кнопки */
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--button-color-text);
   cursor: pointer;
 }
 
 .filter-btn:active,
 .filter-btn:hover,
 .filter-btn:focus {
-  align-items: flex-start;
-  background: var(--accent-color);
+  background-color: var(--primary-accent-color);
+  border-color: var(--primary-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   /* после этого описываем текст внутри кнопки */
-  color: #ffffff;
+  color: var(--secondary-accent-color);
 }
-
-/* .examples {
-} */
 
 /* ==========MAIN=END========== */
 
@@ -231,16 +210,17 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--footer-primary-logo-color);
+}
+
+.footer-logo > span {
+  color: var(--footer-secondary-logo-color);
 }
 
 .footer-text {
-  font-family: 'Roboto', sans-serif;
-  color: #e7e9fc;
+  color: var(--other-text-color);
 }
 
 /* ==========FOOTER=END========== */
