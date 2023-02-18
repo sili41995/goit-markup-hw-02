@@ -86,7 +86,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.adress-email:active,
 .adress-email:hover,
 .adress-email:focus {
   color: var(--primary-accent-color);
@@ -96,7 +95,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.adress-phone:active,
 .adress-phone:hover,
 .adress-phone:focus {
   color: var(--primary-accent-color);
@@ -185,7 +183,6 @@ body {
   cursor: pointer;
 }
 
-.filter-btn:active,
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--primary-accent-color);
